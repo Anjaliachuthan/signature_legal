@@ -1,0 +1,283 @@
+.advocates-section {
+  background-color: #ffffff;
+}
+
+.lead-advocates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.75rem;
+  margin-bottom: 6.5rem;
+}
+
+.advocate-card {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.advocate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(13, 17, 23, 0.1);
+  border-color: rgba(197, 160, 89, 0.5);
+}
+
+.advocate-photo-frame {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #f1f5f9;
+  overflow: hidden;
+}
+
+.advocate-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  filter: grayscale(20%);
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+}
+
+.advocate-card:hover .advocate-photo {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.advocate-badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: rgba(13, 17, 23, 0.88);
+  backdrop-filter: blur(8px);
+  color: #dfb96c;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  padding: 0.4rem 0.85rem;
+  border-radius: 2px;
+  border: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+.advocate-content {
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.advocate-name {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #0d1117;
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+}
+
+.advocate-exp {
+  font-size: 0.82rem;
+  color: #8c734b;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.4rem;
+  display: block;
+}
+
+.specialties-box {
+  background: #fbfcfd;
+  border: 1px solid #edf2f7;
+  border-left: 2px solid #8c734b;
+  border-radius: 3px;
+  padding: 1.15rem;
+  margin-bottom: 1.4rem;
+}
+
+.specialties-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #64748b;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.specialties-list {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin: 0;
+  font-size: 0.84rem;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.advocate-bio {
+  font-size: 0.88rem;
+  line-height: 1.68;
+  color: #555e6d;
+  margin-bottom: 1.8rem;
+  flex-grow: 1;
+}
+
+.advocate-contact-row {
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.advocate-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.82rem;
+  color: #64748b;
+  word-break: break-all;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.advocate-email-link:hover {
+  color: #8c734b;
+}
+
+.advocate-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advocate-socials {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.adv-social-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.adv-social-btn:hover {
+  background: #8c734b;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.consult-advocate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background: #0d1117;
+  color: #ffffff;
+  padding: 0.55rem 1.15rem;
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+.consult-advocate-btn:hover {
+  background: #8c734b;
+  transform: translateY(-1px);
+}
+
+/* Associates / Team Grid */
+.associates-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  padding-top: 4rem;
+  border-top: 1px solid #edf0f5;
+}
+
+.associates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.75rem;
+}
+
+.associate-card {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+  transition: all 0.35s ease;
+}
+
+.associate-card:hover {
+  transform: translateY(-5px);
+  border-color: #cbd5e1;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.07);
+}
+
+.associate-photo-wrap {
+  width: 100%;
+  height: 340px;
+  background-color: #f1f5f9;
+  overflow: hidden;
+}
+
+.associate-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.6s ease;
+}
+
+.associate-card:hover .associate-photo {
+  transform: scale(1.04);
+}
+
+.associate-info {
+  padding: 1.4rem 1.6rem;
+  background-color: #fafbfc;
+  border-top: 1px solid #f1f5f9;
+}
+
+.associate-name {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #0d1117;
+  margin-bottom: 0.25rem;
+}
+
+.associate-role {
+  font-size: 0.78rem;
+  color: #8c734b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .lead-advocates-grid,
+  .associates-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .lead-advocates-grid,
+  .associates-grid {
+    grid-template-columns: 1fr;
+  }
+  .advocate-photo-frame {
+    height: 340px;
+  }
+}

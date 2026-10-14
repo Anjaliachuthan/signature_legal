@@ -1,0 +1,92 @@
+.practice-page-root {
+  background-color: #ffffff;
+}
+
+.practice-standards-section {
+  background-color: #fafbfc;
+  border-top: 1px solid var(--color-border);
+}
+
+.standards-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 3.5rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.standards-content h2 {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  color: #11141a;
+  margin-bottom: 1rem;
+}
+
+.standards-content p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #555e6d;
+  margin-bottom: 2rem;
+}
+
+.standards-btn {
+  background-color: #11141a;
+  color: #ffffff;
+  padding: 0.85rem 1.8rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.standards-btn:hover {
+  background-color: #8c734b;
+}
+
+.standards-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.std-badge {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background-color: #f8fafc;
+  border: 1px solid #edf0f5;
+  border-radius: 4px;
+}
+
+.badge-ico {
+  color: #8c734b;
+  flex-shrink: 0;
+}
+
+.std-badge div {
+  display: flex;
+  flex-direction: column;
+}
+
+.std-badge strong {
+  font-size: 0.92rem;
+  color: #11141a;
+  font-family: var(--font-sans);
+}
+
+.std-badge span {
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+@media (max-width: 992px) {
+  .standards-card {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+}

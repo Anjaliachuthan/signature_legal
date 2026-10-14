@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Ultra-luxe corporate legal palette */
+  --color-primary: #0d1117;
+  --color-primary-soft: #161c24;
+  --color-gold: #c5a059;
+  --color-gold-hover: #dfb96c;
+  --color-gold-dark: #8c734b;
+  --color-gold-gradient: linear-gradient(135deg, #d4af37 0%, #aa8238 100%);
+  --color-gold-subtle: rgba(197, 160, 89, 0.08);
+  --color-gold-border: rgba(197, 160, 89, 0.25);
+
+  --color-text-main: #14171f;
+  --color-text-muted: #4e5666;
+  --color-text-light: #7c8596;
+  
+  --color-bg-page: #ffffff;
+  --color-bg-warm: #fcfbf9;
+  --color-bg-subtle: #f7f8fa;
+  --color-border: #e8ebf0;
+  --color-border-dark: #1e2430;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-title: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  --shadow-sm: 0 2px 10px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 20px 50px rgba(15, 23, 42, 0.12);
+  --shadow-glow: 0 0 25px rgba(197, 160, 89, 0.2);
+
+  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-main);
+  background-color: var(--color-bg-page);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Luxury Serif Typography */
+h1, h2, h3, h4, .serif-font {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--color-primary);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
+.brand-font {
+  font-family: var(--font-title);
+  letter-spacing: 0.14em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: var(--transition-smooth);
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.section-padding {
+  padding: 6.5rem 0;
+}
+
+/* Subtle luxury badges */
+.luxury-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 1rem;
+  background: rgba(197, 160, 89, 0.09);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+}
+
+.luxury-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  box-shadow: 0 0 8px var(--color-gold);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  .section-padding {
+    padding: 4rem 0;
+  }
+}

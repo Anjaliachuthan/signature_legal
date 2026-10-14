@@ -1,0 +1,107 @@
+.about-page-root {
+  background-color: #ffffff;
+}
+
+.mission-section {
+  background-color: #ffffff;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.mission-box {
+  padding: 3rem;
+  background-color: #fafbfc;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.mission-icon {
+  width: 56px;
+  height: 56px;
+  background-color: var(--color-gold-light);
+  color: #8c734b;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.mission-box h3 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: #11141a;
+  margin-bottom: 1rem;
+}
+
+.mission-box p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555e6d;
+}
+
+.ethics-banner-section {
+  background-color: #11141a;
+  color: #ffffff;
+  text-align: center;
+}
+
+.ethics-banner-content {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ethics-seal-icon {
+  color: #c5a059;
+  margin-bottom: 1.5rem;
+}
+
+.ethics-banner-content h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.ethics-banner-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.ethics-contact-btn {
+  background-color: #8c734b;
+  color: #ffffff;
+  padding: 0.85rem 2rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.ethics-contact-btn:hover {
+  background-color: #725d3b;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .mission-box {
+    padding: 2rem;
+  }
+  .ethics-banner-content h2 {
+    font-size: 2rem;
+  }
+}

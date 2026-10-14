@@ -1,0 +1,232 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 20, 26, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal-window {
+  background: #ffffff;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 860px;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  animation: modalPop 0.25s ease-out;
+}
+
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: #f1f3f6;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  z-index: 10;
+}
+
+.modal-close-btn:hover {
+  background: #e2e8f0;
+  color: #111;
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.modal-info-pane {
+  background-color: #11141a;
+  color: #ffffff;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: #c5a059;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.modal-info-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.modal-info-desc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.modal-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.modal-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+}
+
+.modal-icon {
+  color: #c5a059;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.modal-security-note {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+.modal-form-pane {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: #ffffff;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #334155;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #8c734b;
+  box-shadow: 0 0 0 3px rgba(140, 115, 75, 0.15);
+}
+
+.modal-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: #8c734b;
+  color: #ffffff;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.modal-submit-btn:hover {
+  background-color: #725d3b;
+}
+
+.modal-success-state {
+  padding: 4.5rem 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-success-icon {
+  color: #16a34a;
+  margin-bottom: 1.25rem;
+}
+
+.modal-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #11141a;
+  margin-bottom: 0.75rem;
+}
+
+.modal-desc {
+  font-size: 0.95rem;
+  color: #64748b;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .modal-grid {
+    grid-template-columns: 1fr;
+  }
+  .modal-info-pane {
+    padding: 2rem;
+  }
+  .modal-form-pane {
+    padding: 2rem;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
